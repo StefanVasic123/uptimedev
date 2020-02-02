@@ -1,0 +1,129 @@
+.component-flex {
+    padding-bottom: 7em;
+}
+.component-rows {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+}
+.desktop-row-5 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.column {
+    display: flex;
+    flex-direction: column;
+}
+.componentBTN {
+    padding: 1em 3em 1em 3em;
+    font-weight: bold;
+    font-size: 1.2em;
+    background-color: cyan;
+}
+.component-btn {
+    padding: 1em 3em 1em 3em;
+    font-weight: bold;
+    font-size: 1.2em;
+}
+.row-1 {
+    padding-bottom: 1em;
+}
+.componentBTNGreen {
+    background-color: green;
+    padding: 1em 3em 1em 3em;
+    font-weight: bold;
+    font-size: 1.2em;
+}
+.componentBTNYellow {
+    background-color: yellow;
+    padding: 1em 3em 1em 3em;
+    font-weight: bold;
+    font-size: 1.2em;
+}
+.componentBTNOrange {
+    background-color: orange;
+    padding: 1em 3em 1em 3em;
+    font-weight: bold;
+    font-size: 1.2em;
+}
+.overBTN {
+    background-color: red;
+    padding: 1em 3em 1em 3em;
+    font-weight: bold;
+    font-size: 1.2em;
+}
+
+#admin-dash {
+    text-align: center;
+}
+.reports-centered {
+    display: flex;
+    justify-content: center;
+}
+#firstShift{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+#secondShift{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+#thirdShift{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.btn-column {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding-bottom: 1em;
+}
+.centered-c {
+    text-align: center;
+}
+.btn-h2 {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 0.4em;
+}
+
+@media (max-width: 800px) {
+    .component-rows {
+        flex-direction: column;
+    }
+    .desktop-row-5 {
+        flex-direction: column;
+    }
+    .comp-div {
+        width: 100%;
+        padding-bottom: 1em;
+    }
+    .componentBTN {
+        width: 100%;
+        padding: 2em 0 2em 0;
+    }
+    .component-btn {
+        width: 100%;
+        padding: 2em 0 2em 0;
+    }
+    .componentBTNYellow {
+        width: 100%;
+        padding: 2em 0 2em 0;
+    }
+    .componentBTNOrange {
+        width: 100%;
+        padding: 2em 0 2em 0;
+    }
+    .componentBTNGreen {
+        width: 100%;
+        padding: 2em 0 2em 0;
+    }
+    .overBTN {
+        width: 100%;
+        padding: 2em 0 2em 0;
+    }
+}

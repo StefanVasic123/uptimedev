@@ -1,26 +1,31 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React, { Component } from 'react';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import {
+  BrowserRouter as Router,
+  Switch,
+  Route,
+  Link,
+  withRouter
+  } from 'react-router-dom';
+import Comp from './components/Comp';
+import CompAll from './components/CompAll';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+import createHistory from 'history/createBrowserHistory';
+const history = createHistory();
+
+class App extends Component {
+  render() {
+    return (
+      <Router history={history} basename={process.env.PUBLIC_URL}>
+        <div>
+          <Switch>
+            <Route path='/' exact component={withRouter(CompAll)} />
+            <Route path='/comp' exact component={withRouter(Comp)} />
+          </Switch>
+        </div>
+      </Router>
+    );
+  }
 }
 
 export default App;
